@@ -146,12 +146,12 @@ a {
 .list--inline .list__item {
   display: inline-block;
   margin-right: 2rem;
-  color: var(--color-heading);
 }
 
 .list--tick {
   list-style-image: url(/images/tick.svg);
   padding-left: 3rem;
+  color: var(--color-heading);
 }
 
 .list--tick .list__item {
@@ -207,7 +207,7 @@ a {
   cursor: pointer;
   font-size: 1.8rem;
   font-weight: 600;
-  padding: 2rem 3rem;
+  padding: 2rem 4vw;
   text-transform: uppercase;
   white-space: nowrap;
   text-align: center;
@@ -296,6 +296,7 @@ a {
   border: 0;
   flex-grow: 1;
   padding: 1.5rem 2rem;
+  width: 0;
 }
 
 .input-group .btn {
@@ -564,6 +565,10 @@ a {
   text-align: center;
 }
 
+.callout__signup {
+  transform: translateY(5rem);
+}
+
 @media screen and (min-width: 768px) {
   .callout .grid--1x2 {
     grid-template-columns: 1fr auto;
@@ -754,13 +759,14 @@ a {
 
 .block-domain__prices {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 6rem);
   font-size: 2rem;
   font-weight: 600;
   justify-items: center;
   max-width: 700px;
   margin: 0 auto;
+  color: var(--color-heading);
 }
 
 @media screen and (min-width: 768px) {
@@ -871,6 +877,10 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+  .footer {
+    font-size: 1.5rem;
+    padding: 10rem 2rem 5rem 2rem;
+  }
   .footer__grid {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   }
